@@ -4,4 +4,6 @@
     <string name="btn1">Login</string>
     <string name="btn2">Ingresar</string>
     <string name="alarma">Alarma</string>
+    <string name="texto2">Texto2</string>
+    <string name="texto3">Texto3</string>
 </resources>
