@@ -16,16 +16,28 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Texto2"
-            android:text="@string/texto2"/>
+            android:text="@string/V_usu" />
 
         <TextView
+            android:id="@+id/R_usu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/Texto3"
-            android:text="@string/texto3"/>
+            android:text="@string/R_usu" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="@string/V_contra" />
+
+        <TextView
+            android:id="@+id/R_contra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/R_contra" />
 
 
 

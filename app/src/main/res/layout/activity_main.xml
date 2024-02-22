@@ -10,25 +10,50 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="132dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
 
         <TextView
+            android:id="@+id/usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/usuario"
-            android:text="@string/user"/>
+            android:text="@string/user" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usu"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/usu" />
+
+        <EditText
+            android:id="@+id/contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/contra" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
 
 
         <Button
@@ -40,13 +65,20 @@
         </Button>
 
         <Button
+            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn2"
             android:text="@string/btn2">
 
         </Button>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar"
+        android:layout_gravity="center"/>
 
     <Button
         android:layout_width="wrap_content"

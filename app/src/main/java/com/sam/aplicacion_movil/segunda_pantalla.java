@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class segunda_pantalla extends AppCompatActivity {
 
-    TextView texto2,texto3;
+    TextView R_usu,R_contra;
 
 
 
@@ -16,6 +16,16 @@ public class segunda_pantalla extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda_pantalla);
 
+        R_usu = findViewById(R.id.R_usu);
+        R_contra = findViewById(R.id.R_contra);
+
+        Bundle recibeDatos = getIntent().getExtras();
+        Bundle recibeDatos2 =  getIntent().getExtras();
+        String info = recibeDatos.getString("keydatos");
+        String info2 = recibeDatos2.getString("keyDatos");
+
+        R_usu.setText(info);
+        R_contra.setText(info2);
 
     }
 }

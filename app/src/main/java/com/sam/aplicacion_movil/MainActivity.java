@@ -8,6 +8,7 @@ import android.provider.AlarmClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 /*<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -16,7 +17,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView nombreUsuario;
-    Button btn1,btn2,alarma;
+    EditText usuario,contraseña;
+    Button btn1,btn2,alarma,enviar;
     String Tag = "Prueba";
 
     @Override
@@ -24,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        usuario = findViewById(R.id.usu);
+        contraseña = findViewById(R.id.contra);
         nombreUsuario = (TextView) findViewById(R.id.usuario);
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
+        enviar = findViewById(R.id.enviar);
         alarma = findViewById(R.id.alarma);
 
 
@@ -52,6 +57,20 @@ public class MainActivity extends AppCompatActivity {
                 createAlarm("desperta marica",22,30);
 
                 nombreUsuario.setText("Alarma creada");
+
+            }
+        });
+
+        enviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Bundle enviaDatos = new Bundle();
+            enviaDatos.putString("keydatos",usuario.getText().toString());
+            enviaDatos.putString("keyDatos",contraseña.getText().toString());
+
+            Intent intent = new Intent(MainActivity.this,segunda_pantalla.class);
+            intent.putExtras(enviaDatos);
+            startActivity(intent);
 
             }
         });

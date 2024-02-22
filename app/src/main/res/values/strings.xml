@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">aplicacion_movil</string>
     <string name="user">User</string>
+    <string name="usu">Usuario</string>
+    <string name="contra">Contraseña</string>
+    <string name="enviar">Enviar datos</string>
     <string name="btn1">Login</string>
     <string name="btn2">Ingresar</string>
     <string name="alarma">Alarma</string>
-    <string name="texto2">Texto2</string>
-    <string name="texto3">Texto3</string>
+    <string name="R_usu">XXX</string>
+    <string name="R_contra">XXX</string>
+    <string name="V_usu">Usuario</string>
+    <string name="V_contra">Contraseña</string>
 </resources>
