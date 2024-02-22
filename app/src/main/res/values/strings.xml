@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">aplicacion_movil</string>
+    <string name="user">User</string>
+    <string name="btn1">Login</string>
+    <string name="btn2">Ingresar</string>
+    <string name="alarma">Alarma</string>
 </resources>
