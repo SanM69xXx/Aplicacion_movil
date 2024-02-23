@@ -12,7 +12,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /*<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-</androidx.constraintlayout.widget.ConstraintLayout>*/
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    */
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         usuario = findViewById(R.id.usu);
         contraseña = findViewById(R.id.contra);
