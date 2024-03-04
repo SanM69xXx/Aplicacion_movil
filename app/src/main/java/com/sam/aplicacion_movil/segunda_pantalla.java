@@ -26,6 +26,5 @@ public class segunda_pantalla extends AppCompatActivity {
 
         R_usu.setText(info);
         R_contra.setText(info2);
-
     }
 }
